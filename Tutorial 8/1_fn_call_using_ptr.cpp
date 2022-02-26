@@ -31,9 +31,9 @@ int main(){
     cout << "\nThe absolute difference is: " << function(subtract, p, q);
     cout << "\nThe product is: " << function(multiply, p, q);
 
-    // ptr[0] = add;
-    // ptr[1] = subtract;
-    // ptr[2] = multiply;
+    ptr[0] = add;
+    ptr[1] = subtract;
+    ptr[2] = multiply;
     cout << "\n\nCalling functions using an array of function pointers:";
     cout << "\nThe sum is: " << ptr[0](p, q);
     cout << "\nThe absolute difference is: " << ptr[1](p, q);

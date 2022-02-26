@@ -26,7 +26,7 @@ int sum(int (*fn)(int), int a){
     return (*fn)(a);
 }
 
-void main(){
+int main(){
     int a;
     cout << "Enter the integer: ";
     cin >> a;
@@ -34,4 +34,5 @@ void main(){
          << sum(sq_sum, a);
     cout << "\nThe sum of cubes of even integers upto a is: "
          << sum(cube_sum, a);
+    return 0;
 }

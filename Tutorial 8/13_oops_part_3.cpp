@@ -36,7 +36,7 @@ class SIdeposit : public fixDeposit {
             return (amount * rate * time) / 100;
         }
         void display(){
-            cout << "account no. " << ++account_no << "\n";
+            cout << "Account number: " << ++account_no << "\n";
             cout << "Simple Interest total amount is: ";
             double SI = interest();
             update(SI);

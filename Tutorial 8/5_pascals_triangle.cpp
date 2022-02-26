@@ -35,11 +35,12 @@ void print(const Pascal &p){
 
 int main(){
     int n;
+    cout << "\nEnter number of rows: ";
     cin >> n;
     Pascal arr[n];
     arr[0] = Pascal();
     for (int i{1}; i < n; i++){
-        arr[i] = Pascal(arr[i-1], i+1);
+        arr[i] = Pascal(arr[i-1], i);
     }
     for (int i{0}; i < n; i++){
         print(arr[i]);
