@@ -30,20 +30,22 @@ class Number : public Binary, public Decimal{
             cin >> deci;
         }
         void convert(){
-            if(deci == 0){
-                bin += '0';
+            int n = deci;
+            string ans = bin;
+            if(n == 0){
+                ans += "0";
                 return;
             }
-            while (deci){
-                bin += (deci % 2 == 0 ? '0' : '1');
-                deci = deci / 2;
+            while (n){
+                ans += (n % 2 == 0 ? "0" : "1");
+                n = n / 2;
             }
-            for (int i = 0; i < bin.length() / 2; i++){
-                char tmp = bin[bin.length() - i - 1];
-                bin[i] = tmp;
-                bin[bin.length() - i - 1] = bin[i];
+            for (int i = 0; i < ans.length() / 2; i++){
+                char tmp = ans[ans.length() - i - 1];
+                ans[ans.length() - i - 1] = ans[i];
+                ans[i] = tmp;
             }
-            cout << "Binary conversion is: " << bin;
+            cout << "Binary conversion is: " << ans;
             return;
         }
 };

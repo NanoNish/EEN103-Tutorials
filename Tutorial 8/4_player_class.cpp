@@ -22,16 +22,13 @@ class Player{
 };
 
 int main(){
-    cout << "\nEnter the number of players: ";
-    int n{0};
-    cin >> n;
     int a, c;
     string b;
     cout << "Enter player number: ";
     cin >> a;
     cout << "Enter the player name: ";
     cin >> b;
-    cout << "Enter the matches player: ";
+    cout << "Enter the matches played: ";
     cin >> c;
     Player player_1(a,b,c);
 }
